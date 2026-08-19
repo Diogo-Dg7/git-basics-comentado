@@ -19,11 +19,13 @@ git stash
 
 **O que faz:**
 
-<!-- TODO: escreva sua explicação aqui. Uma frase por linha. -->
+Armazena temporariamente todos os arquivos monitorados modificados.
+Ele limpa as alterações não commitadas do diretório de trabalho e as guarda em uma pilha temporária.
+Eu usaria para mudar rapidamente de branch para corrigir um bug sem precisar fazer um commit incompleto.
 
 **Quando usar / observação:**
 
-<!-- TODO: opcional, mas conta ponto. -->
+Ótimo para interromper o trabalho atual com segurança sem poluir o histórico de commits.
 
 ---
 
@@ -35,11 +37,13 @@ git stash pop
 
 **O que faz:**
 
-<!-- TODO: escreva sua explicação aqui. Uma frase por linha. -->
+Restaura os arquivos recentes em stash.
+Ele aplica as últimas alterações salvas na pilha do stash e as remove da lista temporária.
+Eu usaria ao retornar para a branch original para continuar o trabalho que havia pausado anteriormente.
 
 **Quando usar / observação:**
 
-<!-- TODO: opcional, mas conta ponto. -->
+Aplica as mudanças mais recentes e apaga o registro do stash automaticamente.
 
 ---
 
@@ -51,11 +55,13 @@ git stash list
 
 **O que faz:**
 
-<!-- TODO: escreva sua explicação aqui. Uma frase por linha. -->
+Lista todos os conjuntos de alterações em stash.
+Ele exibe todos os fragmentos salvos temporariamente na pilha com seus respectivos identificadores.
+Eu usaria caso tivesse feito vários stashes e precisasse identificar qual deles deseja restaurar.
 
 **Quando usar / observação:**
 
-<!-- TODO: opcional, mas conta ponto. -->
+Mostra os registros gravados no formato `stash@{0}`, `stash@{1}`, etc.
 
 ---
 
@@ -67,20 +73,22 @@ git stash drop
 
 **O que faz:**
 
-<!-- TODO: escreva sua explicação aqui. Uma frase por linha. -->
+Descarta os conjuntos de alterações mais recentes em stash.
+Ele deleta permanentemente o último registro salvo na pilha de stash sem aplicá-lo ao diretório de trabalho.
+Eu usaria se decidisse descartar as alterações temporárias guardadas no stash que não seriam mais úteis.
 
 **Quando usar / observação:**
 
-<!-- TODO: opcional, mas conta ponto. -->
+Cuidado: uma vez executado, o conjunto de alterações descartado não poderá ser recuperado.
 
 ---
 
 ## Checklist deste arquivo
 
-- [ ] 1. `git stash`
-- [ ] 2. `git stash pop`
-- [ ] 3. `git stash list`
-- [ ] 4. `git stash drop`
+- [X] 1. `git stash`
+- [X] 2. `git stash pop`
+- [X] 3. `git stash list`
+- [X] 4. `git stash drop`
 
 ---
 
