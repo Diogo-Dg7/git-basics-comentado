@@ -21,11 +21,13 @@ temp-*
 
 **O que este arquivo faz:**
 
-<!-- TODO: escreva sua explicação aqui. Uma frase por linha. -->
+Um arquivo de texto chamado `.gitignore` suprime o versionamento acidental de arquivos e diretórios correspondentes aos padrões especificados.
+Ele evita que arquivos temporários, logs de erros e pastas de dependências sejam rastreados pelo Git.
+Eu usaria na raiz do repositório para ignorar pastas como `node_modules/`, arquivos `.log` e arquivos de ambiente `.env`.
 
 **Quando usar / observação:**
 
-<!-- TODO: opcional, mas conta ponto. -->
+Deve ser criado e configurado logo no início do desenvolvimento do projeto.
 
 ---
 
@@ -37,18 +39,20 @@ git ls-files --others --ignored --exclude-standard
 
 **O que faz:**
 
-<!-- TODO: escreva sua explicação aqui. Uma frase por linha. -->
+Lista todos os arquivos ignorados neste projeto.
+Ele exibe quais arquivos do sistema estão sendo filtrados pelas regras contidas no arquivo `.gitignore`.
+Eu usaria para depurar se um arquivo específico está sendo ignorado corretamente pelas regras configuradas.
 
 **Quando usar / observação:**
 
-<!-- TODO: opcional, mas conta ponto. -->
+Útil para verificar se suas regras do `.gitignore` não estão ignorando arquivos importantes por engano.
 
 ---
 
 ## Checklist deste arquivo
 
-- [ ] 1. Arquivo `.gitignore`
-- [ ] 2. `git ls-files --others --ignored --exclude-standard`
+- [X] 1. Arquivo `.gitignore`
+- [X] 2. `git ls-files --others --ignored --exclude-standard`
 
 ---
 
