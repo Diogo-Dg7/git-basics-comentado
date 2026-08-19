@@ -19,11 +19,13 @@ git fetch [nome-remoto]
 
 **O que faz:**
 
-<!-- TODO: escreva sua explicação aqui. Uma frase por linha. -->
+Baixe todo o histórico de um repositório remoto.
+Ele atualiza as referências do repositório remoto localmente sem alterar ou mesclar nada no seu código de trabalho.
+Eu usaria para verificar o que mudou no servidor remoto sem o risco de afetar meu código atual.
 
 **Quando usar / observação:**
 
-<!-- TODO: opcional, mas conta ponto. -->
+Seguro para inspeção prévia antes de incorporar as mudanças com merge.
 
 ---
 
@@ -35,11 +37,13 @@ git merge [nome-remoto]/[branch]
 
 **O que faz:**
 
-<!-- TODO: escreva sua explicação aqui. Uma frase por linha. -->
+Combina o branch remoto ao branch local atual.
+Ele aplica as alterações trazidas pelo `git fetch` diretamente na sua linha de desenvolvimento atual.
+Eu usaria em conjunto com o `git fetch` para atualizar minha branch local com as novidades da equipe.
 
 **Quando usar / observação:**
 
-<!-- TODO: opcional, mas conta ponto. -->
+Representa a segunda metade do processo de sincronização de dados remotos.
 
 ---
 
@@ -51,11 +55,13 @@ git push [alias] [branch]
 
 **O que faz:**
 
-<!-- TODO: escreva sua explicação aqui. Uma frase por linha. -->
+Envia todos os commits do branch local para o GitHub.
+Ele publica seus commits locais no servidor remoto para disponibilizar seu trabalho para a equipe.
+Eu usaria sempre que finalizasse uma unidade de trabalho e quisesse atualizar o repositório remoto no GitHub.
 
 **Quando usar / observação:**
 
-<!-- TODO: opcional, mas conta ponto. -->
+Exemplo comum: `git push origin main`.
 
 ---
 
@@ -67,11 +73,13 @@ git pull
 
 **O que faz:**
 
-<!-- TODO: escreva sua explicação aqui. Uma frase por linha. -->
+Baixa o histórico e incorpora as mudanças.
+Ele realiza os comandos `git fetch` e `git merge` em uma única operação automática.
+Eu usaria ao início do dia de trabalho para garantir que meu código local está totalmente atualizado com o GitHub.
 
 **Quando usar / observação:**
 
-<!-- TODO: opcional, mas conta ponto. -->
+É o modo mais rápido e prático de sincronizar a branch local com a remota.
 
 ---
 
