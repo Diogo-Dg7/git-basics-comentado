@@ -19,11 +19,13 @@ git branch
 
 **O que faz:**
 
-<!-- TODO: escreva sua explicação aqui. Uma frase por linha. -->
+Lista todos os branches locais no repositório atual.
+Ele indica em qual branch você está trabalhando no momento com um sinal de asterisco.
+Eu usaria para verificar quais branches existem e confirmar em qual delas me encontro antes de trabalhar.
 
 **Quando usar / observação:**
 
-<!-- TODO: opcional, mas conta ponto. -->
+Use `-a` para listar também os branches remotos.
 
 ---
 
@@ -35,11 +37,13 @@ git branch [nome-do-branch]
 
 **O que faz:**
 
-<!-- TODO: escreva sua explicação aqui. Uma frase por linha. -->
+Cria um novo branch.
+Ele estabelece uma nova linha de desenvolvimento independente sem alterar a branch atual.
+Eu usaria para iniciar o desenvolvimento de uma nova funcionalidade ou correção de bug.
 
 **Quando usar / observação:**
 
-<!-- TODO: opcional, mas conta ponto. -->
+Este comando apenas cria o branch, não muda automaticamente para ele.
 
 ---
 
@@ -51,11 +55,13 @@ git switch -c [nome-do-branch]
 
 **O que faz:**
 
-<!-- TODO: escreva sua explicação aqui. Uma frase por linha. -->
+Muda para o branch especificado e atualiza o diretório de trabalho.
+Com a flag `-c`, ele cria o branch e já faz a alternância para ele em um único passo.
+Eu usaria sempre que precisasse começar a trabalhar imediatamente em um novo branch.
 
 **Quando usar / observação:**
 
-<!-- TODO: opcional, mas conta ponto. -->
+Substitui o comando tradicional `git checkout -b [nome-do-branch]`.
 
 ---
 
@@ -67,11 +73,13 @@ git merge [nome-do-branch]
 
 **O que faz:**
 
-<!-- TODO: escreva sua explicação aqui. Uma frase por linha. -->
+Combina o histórico do branch especificado ao branch atual.
+Ele integra o trabalho concluído de outra linha de desenvolvimento na sua branch principal.
+Eu usaria para trazer as alterações de uma funcionalidade concluída para a branch `main`.
 
 **Quando usar / observação:**
 
-<!-- TODO: opcional, mas conta ponto. -->
+Certifique-se de estar na branch de destino antes de executar o merge.
 
 ---
 
@@ -83,21 +91,23 @@ git branch -d [nome-do-branch]
 
 **O que faz:**
 
-<!-- TODO: escreva sua explicação aqui. Uma frase por linha. -->
+Exclui o branch especificado.
+Ele remove uma linha de desenvolvimento que já foi mesclada e não é mais necessária.
+Eu usaria após realizar o merge com sucesso de uma funcionalidade concluída.
 
 **Quando usar / observação:**
 
-<!-- TODO: opcional, mas conta ponto. -->
+Ajuda a manter o repositório limpo e organizado.
 
 ---
 
 ## Checklist deste arquivo
 
-- [ ] 1. `git branch`
-- [ ] 2. `git branch [nome-do-branch]`
-- [ ] 3. `git switch -c [nome-do-branch]`
-- [ ] 4. `git merge [nome-do-branch]`
-- [ ] 5. `git branch -d [nome-do-branch]`
+- [X] 1. `git branch`
+- [X] 2. `git branch [nome-do-branch]`
+- [X] 3. `git switch -c [nome-do-branch]`
+- [X] 4. `git merge [nome-do-branch]`
+- [X] 5. `git branch -d [nome-do-branch]`
 
 ---
 
